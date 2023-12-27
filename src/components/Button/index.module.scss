@@ -1,0 +1,40 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+
+    &__primary {
+        color: var(--white);
+        background: var(--primary);
+        transition: 0.2s all ease;
+        &:hover {
+            background: var(--primary-hover);
+        }
+    }
+    &__secondary {
+        color: var(--black);
+        background-color: none;
+        border: 1px solid var(--grey-light);
+        &:hover {
+            border: 1px solid var(--grey-light);
+        }
+    }
+}
+
+.arrow svg {
+    background: inherit;
+}
+
+.right {
+    background: inherit;
+}
+.down {
+    background: inherit;
+    transform: rotate(90deg);
+}
